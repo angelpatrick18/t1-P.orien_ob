@@ -4,6 +4,8 @@
  */
 package t1.caso;
 
+import java.util.Scanner;
+
 /**
  *
  * @author UCA40425
@@ -15,6 +17,9 @@ public class T1Caso {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner scan= new Scanner(System.in);
+        
+        
     }
     
 }

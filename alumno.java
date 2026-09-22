@@ -9,6 +9,7 @@ package t1.caso;
  * @author UCA40425
  */
 public class alumno {
+
     private String nombre;
     private String tip_doc;
     private String num_doc;
@@ -17,6 +18,7 @@ public class alumno {
     private String telefono;
     private String cod_estudiante;
 
+    
     public String getNombre() {
         return nombre;
     }
@@ -25,6 +27,7 @@ public class alumno {
         this.nombre = nombre;
     }
 
+ 
     public String getTip_doc() {
         return tip_doc;
     }
@@ -33,6 +36,7 @@ public class alumno {
         this.tip_doc = tip_doc;
     }
 
+  
     public String getNum_doc() {
         return num_doc;
     }
@@ -41,6 +45,7 @@ public class alumno {
         this.num_doc = num_doc;
     }
 
+   
     public String getTip_beca() {
         return tip_beca;
     }
@@ -49,6 +54,7 @@ public class alumno {
         this.tip_beca = tip_beca;
     }
 
+   
     public String getDireccion() {
         return direccion;
     }
@@ -56,6 +62,7 @@ public class alumno {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
 
     public String getTelefono() {
         return telefono;
@@ -65,6 +72,7 @@ public class alumno {
         this.telefono = telefono;
     }
 
+   
     public String getCod_estudiante() {
         return cod_estudiante;
     }
@@ -72,8 +80,19 @@ public class alumno {
     public void setCod_estudiante(String cod_estudiante) {
         this.cod_estudiante = cod_estudiante;
     }
-    
-    
-    
-            
-}
+
+
+    public void verDatos() {
+
+        System.out.println(
+                "Nombres completos: " + this.nombre
+                + " Tipo_doc: " + this.tip_doc
+                + " Nro_doc: " + this.num_doc
+                + " Tipo de beca: " + this.tip_beca
+                + " Direccion: " + this.direccion
+                + " Telefono: " + this.telefono
+                + " Codigo_est: " + this.cod_estudiante
+        );
+    }
+}         
+
